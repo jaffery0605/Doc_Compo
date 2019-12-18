@@ -1,6 +1,6 @@
 import React from 'react';
 import Constants from 'expo-constants';
-import { View,Image,SafeAreaView,ScrollView,Platform,Dimensions} from 'react-native';
+import { View,Image,SafeAreaView,ScrollView,Platform,Dimensions,TouchableOpacity} from 'react-native';
 import { Container, Header, Left, Body, Right, Icon, Title,List,ListItem,Button,Text } from 'native-base';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -134,6 +134,9 @@ class Home extends React.Component {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Home</Text>
       </View>
+      <TouchableOpacity activeOpacity={0.5} style={{position:'absolute',width: 50,height: 50,alignItems:'center',justifyContent:'center',right: 30,bottom:30,}}>
+        <Image source={require('./assets/bot.png')}style={{resizeMode:'contain',width: 50,height: 50}}/>
+      </TouchableOpacity>
       </View>
     );
   }
