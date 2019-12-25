@@ -70,8 +70,8 @@ const SwiperScreen = ({ navigation }) => (
                          <Text style={styles.paragraph}>
                             Detailed reports
                           </Text>
-                            <Button mode="contained" onPress={() => navigation.navigate                                     ("HomeScreen")}>
-                               Start
+                            <Button mode="contained" onPress={() => navigation.navigate("HomeScreen")}>
+                               Getting Started
                             </Button>
                       </Background>
                       </View>
